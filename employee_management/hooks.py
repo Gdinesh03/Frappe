@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+#from apps.employee_management.employee_management.employee_management.before_after_install.install import after_migrate
 from . import __version__ as app_version
 
 app_name = "employee_management"
@@ -81,16 +82,23 @@ website_generators = ["Orderss"]
 
 # before_install = "employee_management.install.before_install"
 # after_install = "employee_management.employee_management.setup.install.after_install"
+# gopi
 after_install = "employee_management.employee_management.before_after_install.install.after_install"
 before_install = "employee_management.employee_management.before_after_install.install.before_install"
 update_website_context = "employee_management.employee_management.before_after_install.install.get_context"
-on_session_creation = "employee_management.employee_management.before_after_install.install.on_session_creation"
+# on_session_creation = "employee_management.employee_management.before_after_install.install.on_session_creation"
 on_logout = "employee_management.employee_management.before_after_install.install.on_logout"
+after_sync = "employee_management.employee_management.before_after_install.install.after_sync"
+before_migrate = "employee_management.employee_management.before_after_install.install.before_migrate"
+after_migrate = "employee_management.employee_management.before_after_install.install.after_migrate"
+before_write_file = "employee_management.employee_management.before_after_install.install.before_write_file"
+write_file = "employee_management.employee_management.before_after_install.install.write_file"
+delete_file_data_content = "employee_management.employee_management.before_after_install.install.delete_file_data_content"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
-
+on_session_creation = "employee_management.employee_management.overrides.sesslog.on_session_creation"
 # notification_config = "employee_management.notifications.get_notification_config"
 
 # Permissions

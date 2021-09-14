@@ -4,7 +4,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "des"
+  "des",
+  "image"
  ],
  "fields": [
   {
@@ -12,9 +13,14 @@
    "fieldtype": "Small Text",
    "label": "Des",
    "options": "\n<h1>hello</h1>\n&lt;script&gt;js&lt;/script&gt;\n\n"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
   }
  ],
- "modified": "2021-09-09 19:43:35.000464",
+ "modified": "2021-09-14 12:32:07.414502",
  "modified_by": "Administrator",
  "module": "Employee Management",
  "name": "Testp",
